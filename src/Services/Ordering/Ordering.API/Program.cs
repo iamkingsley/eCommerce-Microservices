@@ -21,8 +21,8 @@ app.MigrateDatabase<OrderContext>((context, services) =>
 {
     var logger = services.GetService<ILogger<OrderContextSeed>>();
     OrderContextSeed
-        .SeedAsync(context, logger)
-        .Wait();
+       .SeedAsync(context, logger)
+       .Wait();
 });
 
 // Configure the HTTP request pipeline.
